@@ -9,7 +9,7 @@
 function blob_fixup() {
     case "${1}" in
         # Correct mods gid
-        etc/permissions/com.motorola.mod.xml)
+        system/etc/permissions/com.motorola.mod.xml)
             sed -i "s|mot_mod|oem_5020|g" "${2}"
             ;;
         # Add uhid group for fingerprint service
