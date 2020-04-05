@@ -65,7 +65,6 @@ PRODUCT_NAME := lineage_beckham
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto Z3 Play
 PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := beckham
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=beckham
