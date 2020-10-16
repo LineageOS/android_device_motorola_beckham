@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on early-init
+    setprop ro.boot.product.hardware.sku qcril
+
 on post-fs-data
     # Start Loading mods kernel modules
     start vendor.gbmodinstall
