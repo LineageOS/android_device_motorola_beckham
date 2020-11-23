@@ -70,8 +70,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     SecureElement \
     NfcNci \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
     Tag
 
 PRODUCT_COPY_FILES += \
