@@ -20,6 +20,10 @@ function blob_fixup() {
         vendor/lib/hw/audio.primary.sdm660.so)
             "${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
             ;;
+        # Fix camera recording
+        vendor/lib/libmmcamera2_pproc_modules.so)
+            sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
+            ;;
         # Load ZAF configs from vendor
         vendor/lib/libzaf_core.so)
             sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
