@@ -456,9 +456,9 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 
 # Moto Mods
--priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|76d78417e57e9f333f7b68ad7a680e7364b91987
--priv-app/ModService/ModService.apk|d418527955614b444656efaa066ba58f70817c5a
--priv-app/ProjectorApp/ProjectorApp.apk:priv-app/ProjectorApp/ProjectorApp.apk;PRESIGNED
+-priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|37a020b2350748a5f684870d652a1e3e31d8d1e2
+-priv-app/ModService/ModService.apk|ac2cfdce29c6e023a600bd96613e270815f3c878
+-priv-app/ProjectorApp/ProjectorApp.apk|fd501856dc2f20a78397ef770cfe5f7a73ead9ca
 etc/firmware/upd-00000126-00001001-fed70128-fffe0001-02.tftf
 etc/permissions/com.motorola.aov.xml
 etc/permissions/com.motorola.mod.protocols.xml
