@@ -385,17 +385,7 @@ vendor/lib/libS5k2l7PdafCamif.so
 vendor/lib/libmm-qcamera.so
 
 # Camera - Firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Display calib
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml
@@ -421,6 +411,13 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 
+# Firmware - Audio - Video
+vendor/etc/ap_gain.bin
+vendor/etc/ap_gain_mmul.bin
+
+# Firmware - CapSense
+system/etc/firmware/MotorolaCapSense.hex:vendor/firmware/MotorolaCapSense.hex
+
 # Firmware - Display panels
 vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-dvt1a.tdat
 vendor/firmware/synaptics-smd-s3706b-18020101-298a66-beckham-evt.tdat
@@ -433,6 +430,16 @@ vendor/firmware/moon-dsp1-ultrasound.wmfw
 vendor/firmware/moon-dsp2-aov-frontend.wmfw
 vendor/firmware/moon-dsp2-aov-vrgain.bin
 vendor/firmware/moon-dsp3-aov-control.wmfw
+
+# Firmware - Opalum
+system/etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
+system/etc/firmware/opalum.rx.ext.config.1:vendor/firmware/opalum.rx.ext.config.1
+system/etc/firmware/opalum.rx.ext.config.2:vendor/firmware/opalum.rx.ext.config.2
+system/etc/firmware/opalum.rx.ext.config.3:vendor/firmware/opalum.rx.ext.config.3
+system/etc/firmware/opalum.tx.ext.config.0:vendor/firmware/opalum.tx.ext.config.0
+system/etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.1
+system/etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
+system/etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
