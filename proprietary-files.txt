@@ -467,8 +467,6 @@ vendor/lib64/libkeymasterutils.so
 # MotHealth
 vendor/bin/hw/motorola.hardware.health@1.0-service
 vendor/etc/init/motorola.hardware.health@1.0-service.rc
-vendor/lib/motorola.hardware.health@1.0.so
-vendor/lib64/motorola.hardware.health@1.0.so
 
 # Moto Mods
 -system/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|37a020b2350748a5f684870d652a1e3e31d8d1e2
