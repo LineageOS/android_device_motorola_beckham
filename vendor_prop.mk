@@ -12,6 +12,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
 
+# Fluence
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.dualmic.config=endfire \
+    persist.vendor.audio.fluence.audiorec=false \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.fluence.voicecall=false \
+    persist.vendor.audio.fluence.voicecomm=true \
+    persist.vendor.audio.fluence.voicerec=false \
+    ro.qc.sdk.audio.fluencetype=none \
+    ro.vendor.audio.sdk.fluencetype=none
+
 # Mods
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.mod.platformsdkversion=281
