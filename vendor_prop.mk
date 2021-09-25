@@ -20,7 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicecomm=true \
     persist.vendor.audio.fluence.voicerec=false \
-    ro.qc.sdk.audio.fluencetype=none \
     ro.vendor.audio.sdk.fluencetype=none
 
 # Mods
