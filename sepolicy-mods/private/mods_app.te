@@ -1,5 +1,6 @@
 # ModService
 typeattribute mods_app coredomain;
+typeattribute mods_app mlstrustedsubject;
 
 app_domain(mods_app)
 net_domain(mods_app)
