@@ -28,6 +28,7 @@ AB_OTA_PARTITIONS += \
     vendor
 
 # Assertions
+TARGET_BOARD_INFO_FILE := device/motorola/beckham/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := beckham
 
 # Audio
