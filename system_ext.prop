@@ -1,2 +1,5 @@
 # Audio
 ro.qc.sdk.audio.fluencetype=none
+
+# Disable the ripple
+persist.debug.suppress-charging-ripple=true
