@@ -56,4 +56,5 @@
     <item name="cpu.awake">2.676</item>
     <item name="cpu.idle">4.682</item>
     <item name="battery.capacity">3000</item>
+    <item name="bluetooth.controller.voltage">3300</item>
 </device>
