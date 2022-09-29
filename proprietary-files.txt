@@ -8,7 +8,7 @@ system/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
 system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Audio - Prebuilt
-vendor/lib/hw/audio.primary.sdm660.so|974ff23c1084f0b5d87d4571ecdbd6ccd0fce33c
+vendor/lib/hw/audio.primary.sdm660.so
 vendor/lib/libaudioroute.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
