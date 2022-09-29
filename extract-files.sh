@@ -20,7 +20,7 @@ function blob_fixup() {
             ;;
         # Add uhid group for fingerprint service
         vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
-            sed -i "s/input/uhid input/" "${2}"
+            sed -i "s/system input/system uhid input/" "${2}"
             ;;
         # Replace libcutils with libprocessgroup
         vendor/lib/hw/audio.primary.sdm660.so)
