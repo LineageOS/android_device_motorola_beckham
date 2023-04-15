@@ -14,8 +14,12 @@
 # limitations under the License.
 #
 
-# Inherit from motorola sdm660-common
--include device/motorola/sdm660-common/BoardConfigCommon.mk
+# Must set these before including common config
+TARGET_BOARD_PLATFORM := sdm660
+TARGET_BOOTLOADER_BOARD_NAME := SDM660
+
+# Inherit from motorola msm8998-common
+include device/motorola/msm8998-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/beckham
 
@@ -41,6 +45,7 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/beckham_manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/motomods.xml
 
 # Partitions
