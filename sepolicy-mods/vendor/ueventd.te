@@ -1,3 +1,0 @@
-# Greybus firmware
-allow ueventd greybus_fw_data_file:dir search;
-allow ueventd greybus_fw_data_file:file r_file_perms;

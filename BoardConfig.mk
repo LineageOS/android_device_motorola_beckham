@@ -17,6 +17,7 @@
 # Must set these before including common config
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOOTLOADER_BOARD_NAME := SDM660
+TARGET_SUPPORTS_MOTO_MODS := true
 
 # Inherit from motorola msm8998-common
 include device/motorola/msm8998-common/BoardConfigCommon.mk
@@ -61,11 +62,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-
-# SELinux
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/private
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/public
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/vendor
 
 # inherit from the proprietary version
 include vendor/motorola/beckham/BoardConfigVendor.mk
