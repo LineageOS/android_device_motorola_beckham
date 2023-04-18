@@ -47,7 +47,6 @@ TARGET_KERNEL_CONFIG := lineageos_beckham_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/beckham_manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/motomods.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
