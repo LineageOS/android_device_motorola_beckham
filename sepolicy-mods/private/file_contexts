@@ -1,2 +1,0 @@
-# Greybus firmware
-/data/gbfirmware(/.*)?                u:object_r:greybus_fw_data_file:s0
