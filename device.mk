@@ -97,3 +97,5 @@ $(call inherit-product, device/motorola/msm8998-common/common.mk)
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so
+
+PRODUCT_SHIPPING_API_LEVEL := 27
