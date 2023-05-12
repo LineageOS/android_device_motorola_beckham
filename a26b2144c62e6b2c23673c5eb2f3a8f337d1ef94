@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/q/If00badd6dc12e0245c74bba12e4816361091e754",
       "revId": "a26b2144c62e6b2c23673c5eb2f3a8f337d1ef94",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d44f0a19_382d4549",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-05-12T18:55:45Z",
+      "side": 1,
+      "message": "unmerged, one device, and for a different reason tbh. I\u0027m fine with leaving this as is.",
+      "parentUuid": "b0bb9ca4_54adca5a",
+      "revId": "a26b2144c62e6b2c23673c5eb2f3a8f337d1ef94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
