@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
 
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.beckham.rc \
     init.gbmods.sh
 
