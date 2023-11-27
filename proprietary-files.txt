@@ -1,13 +1,7 @@
-# Audio ACDB
-system/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
-system/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
-system/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
-system/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
-system/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
-system/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
-system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from beckham_retail (PPWS29.131-27-1-27).
 
-# Audio - Prebuilt
+# Audio (Prebuilt Audio HAL)
 vendor/lib/hw/audio.primary.sdm660.so|974ff23c1084f0b5d87d4571ecdbd6ccd0fce33c
 vendor/lib/libaudioroute.so
 vendor/lib/libmotaudioutils.so
@@ -17,6 +11,15 @@ vendor/lib/libtinycompress.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/libunshorten.so
 
+# Audio = ACDB
+system/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
+system/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
+system/etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
+system/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
+system/etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
+system/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
+system/etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
+
 # Audio - Soundfx
 vendor/lib/libeqservicebridge.so
 vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so
@@ -24,14 +27,9 @@ vendor/lib/soundfx/libmmieffectswrapper.so
 vendor/lib/soundfx/libspeakerbundle.so
 
 # Camera
--system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-system/etc/permissions/com.motorola.motosignature.xml
-system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
 system/etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
 system/etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
 system/etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
-system/framework/com.motorola.motosignature.jar
-system/priv-app/MotCamera2/MotCamera2.apk;OVERRIDES=Aperture
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/mot_ov5675_chromatix.xml
 vendor/etc/camera/mot_s5k4h7_chromatix.xml
@@ -251,6 +249,9 @@ vendor/lib/libchromatix_s5k2l7sa_preview.so
 vendor/lib/libchromatix_s5k2l7sa_snapshot.so
 vendor/lib/libchromatix_s5k2l7sa_video_4k.so
 
+# Camera - Firmware
+vendor/firmware/cpp_firmware_v1_12_0.fw
+
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
@@ -377,19 +378,14 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Camera - Postprocessing
-vendor/lib/libS5k2l7Pdaf.so
-vendor/lib/libS5k2l7PdafCamif.so
-vendor/lib/libmm-qcamera.so
+# Camera - MotCamera2
+-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.motosignature.xml
+system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
+system/framework/com.motorola.motosignature.jar
+system/priv-app/MotCamera2/MotCamera2.apk;OVERRIDES=Aperture
 
-# Camera - libstdc++ -  Postprocessing
-vendor/lib/libdualcameraddm.so|751af4f60368e75b9f38a05d9976ef721bd72590
-vendor/lib64/libdualcameraddm.so|bcbd77868ad296e3c238c61c2a189c3fe3c11a21
-
-# Camera - Firmware
-vendor/firmware/cpp_firmware_v1_12_0.fw
-
-# Camera - JNI
+# Camera - MotCamera2 (JNI)
 system/priv-app/MotCamera2/lib/arm64/libBulkSNPE.so
 system/priv-app/MotCamera2/lib/arm64/libDepthBokehEffect.so
 system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so
@@ -487,7 +483,16 @@ system/priv-app/MotCamera2/lib/arm64/libyuv.so
 system/priv-app/MotCamera2/lib/arm64/libzx-barcode.so
 system/priv-app/MotCamera2/lib/arm64/libzxing-core.so
 
-# Display calib
+# Camera - Postprocessing
+vendor/lib/libS5k2l7Pdaf.so
+vendor/lib/libS5k2l7PdafCamif.so
+vendor/lib/libmm-qcamera.so
+
+# Camera - Postprocessing - libstdc++
+vendor/lib/libdualcameraddm.so|751af4f60368e75b9f38a05d9976ef721bd72590
+vendor/lib64/libdualcameraddm.so|bcbd77868ad296e3c238c61c2a189c3fe3c11a21
+
+# Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml
 
@@ -596,7 +601,7 @@ vendor/lib64/libmodmanager.so
 # NFC
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
-# Offline charging - from nash_retail (PPX29.159-24).
+# Offline charging - from nash_retail (PPX29.159-24)
 vendor/bin/charge_only_mode|0ba9713157beb424eef3e9af721374e18c88bd89
 
 # Sensors
@@ -605,6 +610,6 @@ vendor/lib/sensors.iio.so
 vendor/lib64/libiio.so
 vendor/lib64/sensors.iio.so
 
-# Sensors - from motorola/lake_retail/lake:10/QPWS30.61-21-18-7/fac4a:user/release-keys
+# Sensors - from lake_retail (QPWS30.61-21-18-7-12)
 vendor/lib/sensors.ssc.so|8d311851599fd687fff7ba3a13faecd87a04b4e7
 vendor/lib64/sensors.ssc.so|d3471c08181b097b92d35683d260e38358d7a13a
