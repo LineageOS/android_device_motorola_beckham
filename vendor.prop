@@ -1,7 +1,3 @@
-#
-# props for beckham
-#
-
 # Audio
 persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb
 persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb
