@@ -31,7 +31,7 @@ system/etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
 system/etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
 system/etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
 system/framework/com.motorola.motosignature.jar
-system/priv-app/MotCamera2/MotCamera2.apk
+system/priv-app/MotCamera2/MotCamera2.apk|5bc191b80726f0cb32b4e54cd3cb05cd3224ce7f
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/mot_ov5675_chromatix.xml
 vendor/etc/camera/mot_s5k4h7_chromatix.xml
