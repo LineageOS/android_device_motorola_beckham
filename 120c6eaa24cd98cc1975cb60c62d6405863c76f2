@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61cf5e87_2a7dc0d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-06-19T21:14:15Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it be better to do this https://review.lineageos.org/q/I082840481e8dfef4cbcfa247213848aaa9abaa8c and set target-level in the common tree?",
+      "revId": "120c6eaa24cd98cc1975cb60c62d6405863c76f2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
