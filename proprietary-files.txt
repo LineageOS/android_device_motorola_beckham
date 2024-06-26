@@ -569,9 +569,9 @@ system/etc/permissions/privapp-permissions-com.motorola.projectormod.xml
 system/etc/sysconfig/hiddenapi-whitelist-com.motorola.modservice.xml
 system/etc/sysconfig/hiddenapi-whitelist-com.motorola.projectormod.xml
 system/lib/libmodmanager_system.so
-system/lib64/libmodhw.so
+system/lib64/libmodhw.so;SYMLINK=system/priv-app/ModFmwkProxyService/lib/arm64/libmodhw.so
 system/lib64/libmodmanager_system.so
-system/lib64/libvibratorhw.so
+system/lib64/libvibratorhw.so;SYMLINK=system/priv-app/ModFmwkProxyService/lib/arm64/libvibratorhw.so
 system/lib64/motorola.hardware.vibrator@1.0.so
 -system/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk|37a020b2350748a5f684870d652a1e3e31d8d1e2
 -system/priv-app/ModService/ModService.apk|c823ccd189721d1c39ba667e8a7d1151cdf88a8d
