@@ -1,2 +1,5 @@
 # Audio
 ro.qc.sdk.audio.fluencetype=none
+
+# Display Mirroring Dialog
+persist.sysui.disable_mirroring_confirmation_dialog=true
