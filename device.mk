@@ -66,8 +66,8 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.sys.beckham.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.beckham.rc
 
-PRODUCT_PACKAGES += \
-    init.beckham.rc
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
 # ModService
 PRODUCT_COPY_FILES += \
