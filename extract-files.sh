@@ -18,6 +18,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/system input/system uhid input/" "${2}"
             ;;
+        # libbase_shim
+        vendor/bin/hw/motorola.hardware.health@1.0-service)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
         # Replace libcutils with libprocessgroup
         vendor/lib/hw/audio.primary.sdm660.so)
             [ "$2" = "" ] && return 0
