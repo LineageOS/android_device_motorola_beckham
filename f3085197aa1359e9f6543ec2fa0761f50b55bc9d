@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b4c2aca_fb74d260",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-02T16:53:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4b8048c5_262ca574",
+      "revId": "f3085197aa1359e9f6543ec2fa0761f50b55bc9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ac56f114_f139d9bd",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-10-02T15:41:40Z",
       "side": 1,
       "message": "Shouldn\u0027t have to be explicitly built",
+      "revId": "f3085197aa1359e9f6543ec2fa0761f50b55bc9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5fc4d5f6_2514e5f1",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-02T16:53:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac56f114_f139d9bd",
       "revId": "f3085197aa1359e9f6543ec2fa0761f50b55bc9d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
