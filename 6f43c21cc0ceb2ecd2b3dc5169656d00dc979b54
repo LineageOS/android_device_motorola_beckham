@@ -52,6 +52,24 @@
       "parentUuid": "2bae4cc5_ae5c11de",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5987954d_90211bb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-02T20:01:20Z",
+      "side": 1,
+      "message": "Tested the stock audio HAL on beckham (lineage-22.2), set up like nash: beckham\u0027s audio.primary.sdm660.so (TheMuppets lineage-20) renamed, with libtinyalsa/libaudioroute renamed so they don\u0027t clash with the CAF ones, and ro.hardware.audio.primary pointing to it. It loads and runs without any crash, so the QPR3 v5 issue seems gone like on nash.\n\nResults with a JBL SoundBoost:\n- Media plays on the mod natively: audio_mods swaps speaker -\u003e mod-speaker, opens MODS_MI2S with the mod ACDB (215), and it is stereo (the CAF approach was mono only). No need for the usb-headset paths or the PCM 65 daemon.\n- Calls work (earpiece + mic), speaker without the mod is fine, detach/reattach switches correctly, and media resumes on the mod after a call.\n- Still needed: force_use(FOR_DOCK)\u003dANALOG_DOCK. With AudioService\u0027s default FORCE_DIGITAL_DOCK, APM picks the speaker and the HAL doesn\u0027t swap. I keep setting it from the small privileged app.\n- Speakerphone during a call stays on the phone speaker (voice-speaker is not swapped). The HAL takes a mod_outputs/mod_inputs parameter that the stock mod service probably set; not investigated yet. I\u0027d keep this as a known regression unless I manage to fix it: I have a Moto Z2 Play on stock ROM (not rooted) that I can use to compare what the stock stack does.\n\nSo I\u0027d suggest a beckham change modeled on nash (blobs + fixups + ro.hardware.audio.primary) instead of this one, which I\u0027d abandon. force_use stays open (app vs framework/overlay). Want me to prepare that change? I can\u0027t build a full tree, but I can test the blobs/fixups on the device.",
+      "parentUuid": "89282982_a0aabefa",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
