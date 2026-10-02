@@ -34,6 +34,24 @@
       "parentUuid": "7cd87863_15601520",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89282982_a0aabefa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-02T19:14:14Z",
+      "side": 1,
+      "message": "it would need to be a CAF audio HAL change that is gated...\n\nBut using the stock Audio HAL is wayyyyy better if you can make that work.",
+      "parentUuid": "2bae4cc5_ae5c11de",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
