@@ -1473,4 +1473,22 @@
 		<path name="mod-headset-mic" />
 		<ctl name="Mods Set Capture Use Case" value="Voice-Rec" />
 	</path>
+
+	<!-- Audio Moto Mods: the CAF audio HAL maps AUDIO_DEVICE_OUT_ANLG_DOCK_HEADSET
+	     (the device connected for the mod) to SND_DEVICE_OUT_USB_HEADSET -->
+	<path name="usb-headset">
+		<path name="mod-speaker" />
+	</path>
+
+	<path name="deep-buffer-playback usb-headset">
+		<path name="deep-buffer-playback mod" />
+	</path>
+
+	<path name="low-latency-playback usb-headset">
+		<path name="low-latency-playback mod" />
+	</path>
+
+	<path name="compress-offload-playback usb-headset">
+		<path name="compress-offload-playback mod" />
+	</path>
 </mixer>
