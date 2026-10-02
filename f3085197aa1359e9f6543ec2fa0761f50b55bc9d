@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4b8048c5_262ca574",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-02T15:48:55Z",
+      "side": 1,
+      "message": "Move the shim to device/motorola/msm8998-common, Nash and Payton will need this too probably.\n\nYou can keep device.mk and extract-files.py changes here.",
+      "revId": "f3085197aa1359e9f6543ec2fa0761f50b55bc9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ac56f114_f139d9bd",
         "filename": "device.mk",
         "patchSetId": 1
