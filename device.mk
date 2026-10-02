@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
 
 # Motorola Health
 PRODUCT_PACKAGES += \
+    libmothealth_shim \
     motorola.hardware.health@1.0.vendor
 
 # NFC
