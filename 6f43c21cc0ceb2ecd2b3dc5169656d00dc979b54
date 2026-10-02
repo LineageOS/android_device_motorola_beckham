@@ -16,6 +16,24 @@
       "message": "@pierre.augustin@gmail.com what\u0027s up with this one?\n\nNash and Messi both use prebuilt audio hal, Beckham doesn\u0027t for some reason...\n\nLmk where this is at status wise.",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2bae4cc5_ae5c11de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-02T18:24:51Z",
+      "side": 1,
+      "message": "Hi! Status: on lineage-22.2 with the CAF HAL, audio mods need three pieces, all validated on my beckham (JBL SoundBoost plays after a cold boot and across user switches):\n1. This change: the CAF HAL maps ANLG_DOCK_HEADSET to SND_DEVICE_OUT_USB_HEADSET, which has no mixer path, so the stream doesn\u0027t even start.\n2. The hostless MADERA-MODS PCM (device 65) has to be opened during playback, otherwise the mod\u0027s I2S port is never activated and it stays silent. The stock HAL did that; I currently do it with a small vendor daemon that follows \"Mods Enable Output Devices\".\n3. force_use(FOR_DOCK) has to be ANALOG_DOCK: AudioService sets FORCE_DIGITAL_DOCK (DOCK_AUDIO_MEDIA_ENABLED), so APM never selects the dock device. I set it from a small privileged app.\n\nDetails and logs: https://github.com/pierre-augustin/moto-mod-audio-fix/tree/main/upstream\n\nAbout the prebuilt HAL: beckham dropped it in 395968 (\"QPR3 enforces interface v5, but our HAL crashes with v5\"). If nash/messi got their prebuilt HAL working on 22.2, going back to beckham\u0027s stock HAL may be the cleaner fix, since it handled 2 natively. I can\u0027t build a full tree, but I\u0027m happy to test builds on the device. Otherwise, how would you like 2 and 3 to land: vendor daemon + sepolicy in the tree, or a change in the CAF audio HAL?",
+      "parentUuid": "7cd87863_15601520",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
