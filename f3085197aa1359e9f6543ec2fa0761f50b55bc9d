@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac56f114_f139d9bd",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-02T15:41:40Z",
+      "side": 1,
+      "message": "Shouldn\u0027t have to be explicitly built",
+      "revId": "f3085197aa1359e9f6543ec2fa0761f50b55bc9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
