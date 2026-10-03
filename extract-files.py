@@ -54,6 +54,21 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-beckham.rc': blob_fixup()
         .regex_replace('system input', 'system uhid input'),
+    'vendor/lib/hw/audio.primary.sdm660-moto.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-moto.so')
+        .replace_needed('libcutils.so', 'libprocessgroup.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so')
+        .replace_needed('libutils.so', 'libutils-v32.so')
+        .fix_soname(),
+    'vendor/lib/libaudioroute-moto.so': blob_fixup()
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so')
+        .replace_needed('libutils.so', 'libutils-v32.so')
+        .fix_soname(),
+    (
+        'vendor/lib/libmotaudioutils.so',
+        'vendor/lib/libtinycompress_vendor.so'
+    ): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
     (
         'vendor/lib/com.motorola.mod@1.0_vendor.so',
         'vendor/lib/libmodmanager.so',
