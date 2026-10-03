@@ -54,6 +54,19 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-beckham.rc': blob_fixup()
         .regex_replace('system input', 'system uhid input'),
+    'vendor/lib/hw/audio.primary.sdm660-moto.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-moto.so')
+        .replace_needed('libcutils.so', 'libprocessgroup.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/lib/libaudioroute-moto.so': blob_fixup()
+        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    (
+        'vendor/lib/libmotaudioutils.so',
+        'vendor/lib/libtinycompress_vendor.so'
+    ): blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v32.so'),
     (
         'vendor/lib/com.motorola.mod@1.0_vendor.so',
         'vendor/lib/libmodmanager.so',
@@ -67,8 +80,6 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'\x70\x72\x6F\x64\x75\x63\x74\x2E\x6D\x61\x6E\x75', b'\x70\x72\x6F\x64\x75\x63\x74\x2E\x6E\x6F\x70\x65'),
     'vendor/lib/libzaf_core.so': blob_fixup()
         .binary_regex_replace(b'\x2f\x73\x79\x73\x74\x65\x6d\x2f\x65\x74\x63\x2f\x7a\x61\x66', b'\x2f\x76\x65\x6e\x64\x6f\x72\x2f\x65\x74\x63\x2f\x7a\x61\x66'),
-    'vendor/lib/libtinyalsa-moto.so': blob_fixup()
-        .fix_soname(),
     (
         'vendor/lib/libdualcameraddm.so',
         'vendor/lib/libmmcamera_hdr_gb_lib.so',

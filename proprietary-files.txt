@@ -4,6 +4,14 @@
 # Current blobs with ELF checks disabled:
 # libmmcamera2_cpp_module, libmmcamera2_iface_modules, libmmcamera2_imglib_modules, libmmcamera2_is, libmmcamera2_isp_modules, libmmcamera2_mct, libmmcamera2_q3a_core, libmmcamera2_sensor_modules, libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera2_stats_modules, libmmcamera_faceproc, libmmcamera_hdr_gb_lib, libmmcamera_interface, libmmcamera_pdaf, libmmcamera_pdafcamif, libmmcamera_vstab_module are unable to resolve the following symbol: __aeabi_uldivmod (32-bit)
 
+# Audio (Prebuilt Audio HAL)
+vendor/lib/hw/audio.primary.sdm660.so:vendor/lib/hw/audio.primary.sdm660-moto.so;FIX_SONAME
+vendor/lib/libaudioroute.so:vendor/lib/libaudioroute-moto.so;FIX_SONAME
+vendor/lib/libmotaudioutils.so
+vendor/lib/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so;FIX_SONAME
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/libunshorten.so
+
 # Audio - ACDB
 system/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
 system/etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
