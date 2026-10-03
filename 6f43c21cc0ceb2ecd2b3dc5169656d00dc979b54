@@ -106,6 +106,24 @@
       "parentUuid": "74a56395_882fee48",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b600c71e_034f0dee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-03T15:49:25Z",
+      "side": 1,
+      "message": "Compared with a Z2 Play on stock Oreo (same audio_mods HAL), two framework differences remain, both in the audio policy, not the HAL:\n1. Media: AudioService.readDockAudioSettings()/onAudioServerDied() used FORCE_ANALOG_DOCK (DOCK_AUDIO_MEDIA_ENABLED\u003d1) up to Android 13 and FORCE_DIGITAL_DOCK since 14. On stock FOR_DOCK is 8 and media goes to the mod; since 14 the policy never selects ANLG_DOCK_HEADSET for media. That\u0027s when audio mods broke.\n2. Speakerphone calls: on stock, with FOR_COMMUNICATION\u003dSPEAKER in a call, the policy selects the dock (output devices 0x800) and the HAL swaps voice-speaker to mod-voice-speaker (+ mod-voice-speaker-int-mic). On 22.2 the policy selects the phone speaker (0x2), so no swap.\n\nMod service behaves the same on both (wired analog dock connection + mods_codec_* parameters). So with the stock HAL (506063), a lineage frameworks_base change restoring FORCE_ANALOG_DOCK (maybe behind a config overlay) would replace my app, and a frameworks_av change preferring ANLG_DOCK_HEADSET for in-call speaker would fix speakerphone. Want me to write those?",
+      "parentUuid": "8888131f_a1acb4cd",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
