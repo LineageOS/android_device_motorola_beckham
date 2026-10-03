@@ -88,6 +88,24 @@
       "parentUuid": "5987954d_90211bb6",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8888131f_a1acb4cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-03T06:07:32Z",
+      "side": 1,
+      "message": "Staged: https://review.lineageos.org/c/LineageOS/android_device_motorola_beckham/+/506063 . It only touches beckham\u0027s tree; the blobs come from beckham_retail like the rest (they were in TheMuppets lineage-20), so the vendor repo needs regenerating for the test build.\n\nAbout 422116: it\u0027s in my build and fixes the dock volume. My issue is device selection: AudioService\u0027s readDockAudioSettings() (boot, user switch) and onAudioServerDied() set FOR_DOCK to FORCE_DIGITAL_DOCK when DOCK_AUDIO_MEDIA_ENABLED\u003d1, and the legacy policy only picks ANLG_DOCK_HEADSET for media with FORCE_ANALOG_DOCK. So even with the stock HAL, media goes to the speaker unless something sets ANALOG_DOCK (my app does). A framework tweak in the same spirit as 422116 (e.g. a config to use FORCE_ANALOG_DOCK there) could replace the app. Happy to write it if that sounds acceptable.",
+      "parentUuid": "74a56395_882fee48",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
