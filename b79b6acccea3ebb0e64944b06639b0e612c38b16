@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f0ca1472_b101e121",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-05T16:31:11Z",
+      "side": 1,
+      "message": "https://download.ods.ninja/Android/lineage/beckham/20261005/\n\nplease try this build.\n\nNOTE: It was GMS and several other things for testing, so please just wipe, install, and check that things work, then CR/V this!",
+      "revId": "b79b6acccea3ebb0e64944b06639b0e612c38b16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
