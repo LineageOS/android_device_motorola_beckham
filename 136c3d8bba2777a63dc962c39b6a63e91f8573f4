@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "949628da_a2772c28",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-07T12:13:51Z",
+      "side": 1,
+      "message": "Thanks, dropped DISABLE_CHECKELF (and the header note) in PS3. All the HAL\u0027s dependencies should now resolve, but I can\u0027t build a full tree here, so I\u0027d rely on the next build or CI to confirm.",
+      "parentUuid": "ebe17c59_bda07c7a",
+      "revId": "136c3d8bba2777a63dc962c39b6a63e91f8573f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
