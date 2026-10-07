@@ -17,6 +17,24 @@
       "parentUuid": "ebe17c59_bda07c7a",
       "revId": "136c3d8bba2777a63dc962c39b6a63e91f8573f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1483565b_e379f01a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-10-07T12:53:15Z",
+      "side": 1,
+      "message": "Well, obviously don\u0027t drop it if you can\u0027t test...",
+      "parentUuid": "949628da_a2772c28",
+      "revId": "136c3d8bba2777a63dc962c39b6a63e91f8573f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
