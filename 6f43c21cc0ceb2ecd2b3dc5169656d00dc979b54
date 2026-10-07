@@ -142,6 +142,24 @@
       "parentUuid": "b600c71e_034f0dee",
       "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca0749dd_e0cf4545",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-07T18:57:17Z",
+      "side": 1,
+      "message": "Here they are, uploaded as WIP since they\u0027re untested (topic beckham-analog-dock):\n- frameworks_base: AudioService: Allow docks to force the analog dock for media - adds config_dockAudioUseAnalogDock (default false), so nothing changes for other devices: https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/506921\n- beckham: overlay: Route dock media audio to the analog dock: https://review.lineageos.org/c/LineageOS/android_device_motorola_beckham/+/506922\n- frameworks_av: audiopolicy: Use the analog dock as the speaker for calls - only applies when FOR_DOCK is FORCE_ANALOG_DOCK, i.e. on devices that opt in: https://review.lineageos.org/c/LineageOS/android_frameworks_av/+/506923\n\nWith 506063, the first two should make media play on the mod without my app; the third should bring speakerphone calls back to the mod like on stock. Could you include them in a test build when convenient?",
+      "parentUuid": "c36c842c_85a5a2b5",
+      "revId": "6f43c21cc0ceb2ecd2b3dc5169656d00dc979b54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": [
