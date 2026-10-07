@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6716515_9c3bc091",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-07T13:37:07Z",
+      "side": 1,
+      "message": "Right, restored DISABLE_CHECKELF in PS4 (same content as PS2, which matches the tested build).",
+      "parentUuid": "1483565b_e379f01a",
+      "revId": "3aa6fb23bedfa463d0c5a00e237ef81d2f5dfb8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
