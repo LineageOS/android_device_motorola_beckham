@@ -1,0 +1,22 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d853ffa_a29fb5b8",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 38178
+      },
+      "writtenOn": "2026-10-07T12:00:49Z",
+      "side": 1,
+      "message": "Done, moved to FIX_SONAME (also for libaudioroute-moto and libtinyalsa-moto, and dropped the now empty libtinyalsa-moto fixup).",
+      "parentUuid": "a5fc3e3f_b82266eb",
+      "revId": "a8ed810e929fde4b7df8be3b23b735b16c302939",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
