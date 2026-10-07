@@ -35,6 +35,24 @@
       "parentUuid": "949628da_a2772c28",
       "revId": "136c3d8bba2777a63dc962c39b6a63e91f8573f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9eb21cba_01343f6c",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-07T13:37:55Z",
+      "side": 1,
+      "message": "I\u0027ll move it back but we can\u0027t. Our libs are old and we use 0.9.",
+      "parentUuid": "1483565b_e379f01a",
+      "revId": "136c3d8bba2777a63dc962c39b6a63e91f8573f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
